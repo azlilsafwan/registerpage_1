@@ -1,0 +1,206 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/backdrop_test_1.png');
+	background-position: center;
+}
+
+.back-div {
+	position: absolute;
+	top: 20px;
+}
+
+.buttonwithtext {
+	margin: 20px;
+	margin-left: 5px;
+	padding: 10px 10px 10px 10px;
+	background-color: #27a6ba;
+	border-radius: 15px;
+	transition: .5s;
+}
+
+.buttonwithtext:hover {
+	padding: 10px 180px 10px 10px;
+}
+
+.textback {
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 70px;
+}
+
+.buttonwithtext:hover + .textback {
+	visibility: visible;
+	animation: text 3s 1;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+
+.main-body {
+	width: 400px;
+	height: 500px;
+	margin: 10% auto;
+	background-color: white;
+	box-shadow: 1px 1px 10px #9edee8;
+	border-radius: 15px;
+	border: none;
+	padding: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.logo {
+	width: 240px;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #242424;
+}
+
+.button-div {
+	width: 240px;
+	margin: 30px auto;
+	box-shadow: 1px 1px 20px #9edee8;
+	padding: 5px;
+	border-radius: 30px;
+	position: relative;
+}
+
+.toggle-button {
+	padding: 10px 30px;
+	background: transparent;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	position: relative;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	background-color: #27a6ba;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.socmed-div {
+	width: 240px;
+	margin: 10px auto;
+}
+
+.socmed-div i {
+	text-align: center;
+	padding: 6px;
+	margin: 0 5.5px;
+	transition: .5s;
+	color: #27a6ba;
+	border-radius: 10px;
+	transition: .5s;
+}
+
+.socmed-div i:hover {
+	color: white;
+	background-color: #27a6ba;
+	transition: .5s;
+}
+
+.form-group {
+	width: 280px;
+	margin: 30px auto;
+	position: absolute;
+	top: 180px;
+}
+
+.inputwithicon {
+	position: relative;
+}
+
+.inputwithicon input {
+	padding: 5px 0 5px 25px;
+}
+
+.inputwithicon i {
+	position: absolute;
+	left: 2px;
+	top: -2px;
+	padding: 9px 8px 9px 0;
+	color: #27a6ba;
+}
+
+.input-field {
+	width: 90%;
+	margin: 5px 0;
+	border: none;
+	border-bottom: solid 1px #27a6ba;
+	padding: 10px 0;
+	background: transparent;
+	outline: none;
+}
+
+.submit-button {
+	width: 100%;
+	padding: 10px 30px;
+	margin:  30px auto;
+	border: 0;
+	outline: 0;
+	background-color: white;
+	border: solid 1px #27a6ba;
+	border-radius: 15px;
+	color: #27a6ba;
+	cursor: pointer;
+	box-shadow: 1px 1px 10px #9edee8;
+	transition: .5s;
+	font-size: 14px;
+}
+
+.submit-button:hover {
+	background-color: #27a6ba;
+	color: white;
+	transition: .5s;
+}
+
+.select-class {
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	border: 0;
+	outline: 0;
+	border-bottom: solid 1px #27a6ba;
+	background-color: transparent;
+}
+
+.checkbox-div {
+	margin-top: 10px;
+}
+
+.agree {
+	font-size: 12px;
+	position: absolute;
+	bottom: 100px;
+}
+
+.agree a {
+	color: #27a6ba;
+	cursor: pointer;
+}
+
+#free {
+	left: 60px;
+	transition: .5s;
+}
+
+#premium {
+	left: 460px;
+	transition: .5s;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Page</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/bf0be39f55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="main-body">
+			<div class="logo">
+				<a href="#"><strong><span style="color: #27a6ba;">LilDoodle</span>Design</strong></a>
+			</div>
+			<div class="button-div">
+				<div id="btn"></div>
+				<button type="button" class="toggle-button" onclick="free()">Free User</button>
+				<button type="button" class="toggle-button" onclick="premium()">Premium</button>
+			</div> <!-- End of .button-div -->
+
+			<div class="socmed-div">
+				<i class="fab fa-twitter fa-lg"></i>
+				<i class="fab fa-instagram fa-lg"></i>
+				<i class="fab fa-facebook fa-lg"></i>
+				<i class="fab fa-google fa-lg"></i>
+				<i class="fab fa-youtube fa-lg"></i>
+			</div> <!-- End of .socmed-div -->
+
+			<form id="free" class="form-group" action="#" method="POST">
+				<div class="inputwithicon">
+					<input type="text" class="input-field" name="username" placeholder="Username">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="text" class="input-field" name="email" placeholder="Email">
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="password" class="input-field" name="password" placeholder="Password">
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="password" class="input-field" name="c-password" placeholder="Confirm Password">
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="checkbox-div">
+					<input type="checkbox" class="checkbox" name="agree"><span class="agree">I agree with the <a href="#">terms and conditions</a></span>
+				</div>
+				<button type="submit" class="submit-button">Register</button>
+			</form> <!-- End of free user form -->
+
+			<form id="premium" class="form-group" action="#" method="POST">
+				<div class="inputwithicon">
+					<input type="text" class="input-field" name="username" placeholder="Username">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="text" class="input-field" name="email" placeholder="Email">
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="password" class="input-field" name="password" placeholder="Password">
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="inputwithicon">
+					<input type="password" class="input-field" name="c-password" placeholder="Confirm Password">
+					<i class="fas fa-lock"></i>
+				</div>
+				<select class="select-class" name="account-type">
+					<option class="select-options" disabled selected option>Choose your plan</option>
+					<option class="select-options" value="onemonth">1 Month for RM14.00</option>
+					<option class="select-options" value="sixmonth">6 Months for RM70.00</option>
+					<option class="select-options" value="twelvemonth">12 Months for RM120.00</option>
+				</select>
+				<div class="checkbox-div">
+					<input type="checkbox" class="checkbox" name="agree"><span class="agree">I agree with the <a href="#">terms and conditions</a></span>
+				</div>
+				<button type="submit" class="submit-button">Register</button>
+			</form> <!-- End of premium user form -->
+
+		</div> <!-- End of .main-body -->
+		
+	</div> <!-- End of .container -->
+
+	<script type="text/javascript">
+		var x = document.getElementById("free");
+		var y = document.getElementById("premium");
+		var z = document.getElementById("btn");
+
+		function premium() {
+			x.style.left = "-340px";
+			y.style.left = "60px";
+			z.style.left = "120px";
+		}
+
+		function free() {
+			x.style.left = "60px";
+			y.style.left = "460px";
+			z.style.left = "0";
+		}
+	</script>
+</body>
+</html>
